@@ -1,31 +1,56 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <title>Index</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
+    <header id="header">
+        <div class="header-logo-container">
             <img src="img/logo.svg" alt="logo">
         </div>
-        <nav class="navbar">
-            <a href="#">About</a>
-            <a href="#">Experience</a>
-            <a href="#">Skill</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-            <a href="#">Resume</a>
-        </nav>
+        <div class="navbar">
+            <nav class="navbar-item-container">
+                <a href="#about">About</a>
+                <a href="#">Experience</a>
+                <a href="#">Skill</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+                <a id="resume" href="#">Resume</a>
+            </nav>
+        </div>
     </header>
+
+    <section id="about">
+        <div class="about-image-container">
+            <img src="img/Profile.png" alt="Profile">
+        </div>
+        <div class="about-item-container">
+            <h1>Emanuel <span>Santos</span></h1>
+            <h6>Full Stack Developer</h6>
+            <p>
+                Meu nome é Emanuel Jesus Santos e tenho 20 anos de idade.
+                <br>
+                Atualmente estou cursando Análise e Desenvolvimento e Sistemas, no instituto federal de Santa Catarina.
+                <br>
+                Com foco em me tornar um desenvolvedor Full Stack, estou cada dia estudando mais e aprimorando minhas
+                habilidades.
+            </p>
+        </div>
+        <div class="about-icon-container">
+            <a href="#"><i class="bi bi-chevron-double-down"></i></a>
+        </div>
+    </section>
 </body>
 
 </html>

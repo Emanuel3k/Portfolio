@@ -29,37 +29,113 @@ a {
 
 /* CSS DO HEADER */
 
-header {
+#header {
     background-color: var(--bg-second-color);
     color: var(--txt-color);
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0px 20%;
+    box-shadow: 5px 5px 5px 5px var(--main-color);
+    border-radius: 50%;
+    position: fixed;
+    left: 20%;
+    right: 20%;
+    z-index: 3;
 
 }
 
-.logo {
-    color: var(--main-color);
-    display: inline-block;
-    cursor: pointer;
+.header-logo-container {
+    padding: 1rem;
+    padding-right: 2rem;
 }
 
-.logo img {
+.header-logo-container img {
     width: 250%;
 }
 
 .navbar {
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
     display: flex;
-    gap: 0.5rem;
-    padding: 1rem;
-
+    text-transform: uppercase;
+    margin-right: 1rem;
 }
 
-.navbar a:hover {
-    color: var(--second-color);
+.navbar-item-container a {
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navbar-item-container a:hover {
+    background-color: var(--main-color);
+    border-radius: 50px;
+}
+
+.navbar-item-container #resume {
+    background-color: var(--second-color);
+    border-radius: 50px;
+}
+
+.navbar-item-container #resume:hover {
+    background-color: var(--main-color);
+    border-radius: 50px;
 }
 
 /* CSS DO ABOUT */
+
+#about {
+    background-color: var(--bg-second-color);
+    color: var(--txt-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    height: 100vh;
+    cursor: default;
+}
+
+.about-image-container {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.about-image-container img {
+
+    padding-right: 1rem;
+    border-radius: 50%;
+    width: 30%;
+}
+
+.about-item-container {
+    margin-left: 50px;
+    display: block;
+    font-size: 30px;
+    width: 60%;
+}
+
+.about-item-container span {
+    color: var(--second-color);
+}
+
+.about-item-container h6 {
+    text-decoration: underline white;
+}
+
+.about-item-container p {
+    padding-top: 2rem;
+    font-size: 14px;
+}
+
+.about-icon-container {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
+
+.about-icon-container:hover {
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
