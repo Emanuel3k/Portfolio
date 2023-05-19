@@ -4,7 +4,7 @@
     --txt-color: white;
     --main-color: #370873;
     --second-color: #532391;
-    --bg-main-color: #3f3e40;
+    --bg-main-color: #2b2a2a;
     --bg-second-color: black;
 }
 
@@ -21,6 +21,7 @@
 
 body {
     background-color: var(--bg-main-color);
+    color: var(--txt-color);
 }
 
 a {
@@ -30,8 +31,6 @@ a {
 /* CSS DO HEADER */
 
 #header {
-    background-color: var(--bg-second-color);
-    color: var(--txt-color);
     position: relative;
     display: flex;
     justify-content: center;
@@ -42,7 +41,12 @@ a {
     left: 20%;
     right: 20%;
     z-index: 3;
+    transition: 1.5s;
+    background-color: var(--bg-second-color);
+}
 
+#header.sticky {
+    background-color: var(--bg-main-color);
 }
 
 .header-logo-container {
@@ -70,11 +74,10 @@ a {
     border-radius: 50px;
 }
 
-/* CSS DO ABOUT */
+/* CSS DO EXTEND HEADER */
 
 #extend-header {
     background-color: var(--bg-second-color);
-    color: var(--txt-color);
     position: relative;
     display: flex;
     align-items: center;
@@ -128,4 +131,25 @@ a {
 .extend-header-icon-container:hover {
     background-color: var(--main-color);
     border-radius: 50%;
+}
+
+/* CSS DO ABOUT */
+
+#about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100vh;
+    cursor: default;
+}
+
+ .about-header {
+    padding-top: 8rem;
+    font-size: 30px;
+}
+
+.about-header header {
+    border-bottom: solid var(--main-color)
 }

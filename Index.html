@@ -11,25 +11,27 @@
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- JavaScript -->
+    <script src="js/main.js" defer></script>
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="bg-color-header">
         <div class="header-logo-container">
-            <img src="img/logo.svg" alt="logo">
+            <a href="#"><img src="img/logo.svg" alt="logo"></a>
         </div>
         <div class="navbar">
             <nav class="navbar-item-container">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
+                <a href="#about" class="navAbout">About</a>
+                <a href="#">Experience</a>
                 <a href="#">Skill</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Contact</a>
-                
             </nav>
         </div>
     </header>
+
     <div id="extend-header">
         <div class="extend-header-image-container">
             <img src="img/Profile.png" alt="Profile">
@@ -39,9 +41,24 @@
             <h6>Full Stack Developer</h6>
         </div>
         <div class="extend-header-icon-container">
-            <a href="#experience"><i class="bi bi-chevron-double-down"></i></a>
+            <a href="#about"><i class="bi bi-chevron-double-down"></i></a>
         </div>
     </div>
+
+    <section id="about">
+        <div class="about-header">
+            <header>
+                <h1>About Me</h1>
+            </header>
+
+        </div>
+        <div class="about-content-container">
+
+        </div>
+        <div class="about-status">
+
+        </div>
+    </section>
 </body>
 
 </html>
