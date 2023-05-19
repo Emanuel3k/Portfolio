@@ -70,19 +70,9 @@ a {
     border-radius: 50px;
 }
 
-.navbar-item-container #resume {
-    background-color: var(--second-color);
-    border-radius: 50px;
-}
-
-.navbar-item-container #resume:hover {
-    background-color: var(--main-color);
-    border-radius: 50px;
-}
-
 /* CSS DO ABOUT */
 
-#about {
+#extend-header {
     background-color: var(--bg-second-color);
     color: var(--txt-color);
     position: relative;
@@ -95,47 +85,47 @@ a {
     cursor: default;
 }
 
-.about-image-container {
+.extend-header-image-container {
     width: 40%;
     display: flex;
     justify-content: end;
 
 }
 
-.about-image-container img {
+.extend-header-image-container img {
 
     padding-right: 1rem;
     border-radius: 50%;
     width: 30%;
 }
 
-.about-item-container {
-    margin-left: 50px;
+.extend-header-item-container {
+    padding-right: 1rem;
     display: block;
     font-size: 30px;
     width: 60%;
 }
 
-.about-item-container span {
+.extend-header-item-container span {
     color: var(--second-color);
 }
 
-.about-item-container h6 {
+.extend-header-item-container h6 {
     text-decoration: underline white;
 }
 
-.about-item-container p {
+.extend-header-item-container p {
     padding-top: 2rem;
     font-size: 14px;
 }
 
-.about-icon-container {
+.extend-header-icon-container {
     cursor: pointer;
     position: absolute;
-    bottom: 20px;
+    bottom: 70px;
 }
 
-.about-icon-container:hover {
+.extend-header-icon-container:hover {
     background-color: var(--main-color);
     border-radius: 50%;
 }
