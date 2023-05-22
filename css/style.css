@@ -47,6 +47,7 @@ a {
 
 #header.sticky {
     background-color: var(--bg-main-color);
+    border-radius: 10px;
 }
 
 .header-logo-container {
@@ -71,7 +72,7 @@ a {
 
 .navbar-item-container a:hover {
     background-color: var(--main-color);
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 /* CSS DO EXTEND HEADER */
@@ -104,7 +105,6 @@ a {
 
 .extend-header-item-container {
     padding-right: 1rem;
-    display: block;
     font-size: 30px;
     width: 60%;
 }
@@ -114,7 +114,7 @@ a {
 }
 
 .extend-header-item-container h6 {
-    text-decoration: underline white;
+    text-decoration: underline;
 }
 
 .extend-header-item-container p {
@@ -136,20 +136,83 @@ a {
 /* CSS DO ABOUT */
 
 #about {
-    position: relative;
-    display: flex;
-    justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
     cursor: default;
 }
 
- .about-header {
-    padding-top: 8rem;
+.about-header {
+    border-bottom: solid var(--main-color);
     font-size: 30px;
 }
 
-.about-header header {
-    border-bottom: solid var(--main-color)
+.about-content-container {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.about-content-description {
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+.about-picture {
+    width: 40%;
+}
+
+.about-picture img {
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 5px var(--main-color);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content-info {
+    display: flex;
+    align-items: center;
+}
+
+.about-content-info div {
+    display: flex;
+}
+
+.content-info-bold {
+    font-weight: bold;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.about-status {
+    display: flex;
+    background-color: var(--bg-second-color);
+    border-radius: 50px;
+
+}
+
+.about-status div {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid var(--bg-main-color);
+}
+
+.about-status h1 {
+    color: var(--second-color);
+    font-size: 35px;
+}
+
+.about-status h3 {
+    font-size: 16px;
 }
