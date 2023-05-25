@@ -82,11 +82,9 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
     justify-content: center;
-    height: 100vh;
     cursor: default;
+    height: 100vh;
 }
 
 .extend-header-image-container {
@@ -136,14 +134,12 @@ a {
 /* CSS DO ABOUT */
 
 #about {
-    padding-left: 50px;
-    padding-right: 50px;
-    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 8rem;
     cursor: default;
+    height: 100vh;
 }
 
 .about-header {
@@ -160,6 +156,7 @@ a {
 .about-content-description {
     padding: 2rem;
     line-height: 2rem;
+    text-align: justify;
 }
 
 .about-picture {
@@ -213,6 +210,76 @@ a {
     font-size: 35px;
 }
 
-.about-status h3 {
-    font-size: 16px;
+
+
+/* CSS DO CONTACT*/
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: default;
+    height: 100vh;
+}
+
+.contact-header {
+    border-bottom: solid var(--main-color);
+    font-size: 30px;
+}
+
+.contact-info {
+    line-height: 2rem;
+    padding: 10rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-btn {
+    background-color: var(--second-color);
+    border-radius: 50px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn a {
+    padding: 3rem;
+}
+
+.contact-btn a:hover {
+    background-color: var(--main-color);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    padding: 3rem;
+}
+
+#contact-icon {
+    padding-top: 10rem;
+}
+
+#contact-icon a{
+    padding: 0.5rem;
+}
+
+#contact-icon i {
+    font-size: 30px;
+}
+
+/* CSS DO FOOTER */
+
+#footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-second-color);
+    padding: 1rem;
+    cursor: default;
+}
+
+#footer span {
+    color: var(--second-color);
 }
